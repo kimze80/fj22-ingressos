@@ -23,10 +23,10 @@ public class SessaoForm {
 	private LocalTime horario;
 	
 	@NotNull
-	private Integer filmId;
+	private Integer filmeId;
 	
 	public Sessao toSessao(SalaDao salaDao, FilmeDao filmeDao) {
-		Filme filme = filmeDao.findOne(filmId);
+		Filme filme = filmeDao.findOne(filmeId);
 		Sala sala = salaDao.findOne(salaId);
 		
 		Sessao sessao = new Sessao(this.horario, filme, sala);
@@ -58,12 +58,12 @@ public class SessaoForm {
 		this.horario = horario;
 	}
 
-	public Integer getFilmId() {
-		return filmId;
+	public Integer getFilmeId() {
+		return filmeId;
 	}
 
-	public void setFilmId(Integer filmId) {
-		this.filmId = filmId;
+	public void setFilmeId(Integer filmId) {
+		this.filmeId = filmId;
 	}
 	
 	
