@@ -2,6 +2,7 @@ package br.com.caelum.ingresso.model;
 
 import java.math.BigDecimal;
 <<<<<<< HEAD
+<<<<<<< HEAD
 import java.math.RoundingMode;
 
 import br.com.caelum.ingresso.model.descontos.Desconto;
@@ -33,6 +34,8 @@ public class Ingresso {
 		this.preco = preco;
 	}
 =======
+=======
+>>>>>>> work
 
 import br.com.caelum.ingresso.desconto.Desconto;
 
@@ -63,5 +66,8 @@ public class Ingresso {
     public void setPreco(BigDecimal preco) {
     	this.preco = preco;
     }
+<<<<<<< HEAD
 >>>>>>> Desconto e json
+=======
+>>>>>>> work
 }
