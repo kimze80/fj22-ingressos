@@ -21,7 +21,7 @@ public class DescontoTest {
 				"SCI-FI", new BigDecimal("12"));
 		
 		Sessao sessao = new Sessao(LocalTime.parse("10:00:00"), filme, sala);
-		Ingresso ingresso = new Ingresso(sessao, new SemDesconto());
+		Ingresso ingresso = new Ingresso();
 		
 		BigDecimal precoEsperado = new BigDecimal("32.50");
 		
